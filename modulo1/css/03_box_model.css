@@ -1,0 +1,26 @@
+.producto-card1 {
+    width: 280px;
+    padding: 20px;
+    border: 2px solid darkblue;
+    border-radius: 8px;
+    margin: 16px;
+    background-color: chocolate;
+}
+
+.item-card {
+    width: 280px;
+    padding: 10px 10px 30px 50px;
+    border: 1px solid darkgreen;
+    border-radius: 20px;
+    margin: 16px;
+    background-color: #680606;
+}
+
+.producto-card2 {
+    width: 280px;
+    padding: 20px;
+    border: 2px solid darkblue;
+    border-radius: 8px;
+    margin: 16px;
+    background-color: chocolate;
+}
