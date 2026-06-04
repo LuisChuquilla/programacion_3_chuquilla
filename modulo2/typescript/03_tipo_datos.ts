@@ -1,18 +1,18 @@
 // tipos-string.ts
-const nombre:    string = "Ana García";
-const saludo:    string = `Hola, ${nombre}`;
+const nombreS:    string = "Ana García";
+const saludo:    string = `Hola, ${nombreS}`;
 const vacia:     string = "";
 const comillas:  string = 'También con comillas simples';
 
-console.log(nombre);
+console.log(nombreS);
 console.log(saludo);
 console.log(`La cadena vacía tiene longitud: ${vacia.length}`);
 
 // Métodos de string funcionan igual que en JS
-console.log(nombre.toUpperCase());      // ANA GARCÍA
-console.log(nombre.toLowerCase());      // ana garcía
-console.log(nombre.includes("García")); // true
-console.log(nombre.split(" "));         // ["Ana", "García"]
+console.log(nombreS.toUpperCase());      // ANA GARCÍA
+console.log(nombreS.toLowerCase());      // ana garcía
+console.log(nombreS.includes("García")); // true
+console.log(nombreS.split(" "));         // ["Ana", "García"]
 
 // tipos-number.ts
 const entero:     number = 42;
@@ -21,9 +21,6 @@ const negativo:   number = -100;
 const grande:     number = 1_000_000;  // el _ es solo visual, no cambia el valor
 const resultado:  number = 10 / 3;
 
-//Numerico
-
-//tipos-number.ts
 console.log(entero);
 console.log(decimal);
 console.log(grande);
@@ -37,8 +34,6 @@ console.log(10 * 3);   // 30
 console.log(10 / 3);   // 3.333...
 console.log(10 % 3);   // 1  (resto de la división)
 console.log(2 ** 10);  // 1024  (potencia)
-
-// Boolean
 
 // tipos-boolean.ts
 const mayorDeEdad:  boolean = true;
@@ -54,16 +49,25 @@ const edad = 20;
 const esAdulto: boolean = edad >= 18;
 console.log(`¿Es adulto? ${esAdulto}`); // ¿Es adulto? true
 
-// tipo-any.ts
+// null-undefined.ts
 
-let dato: any = "hola";
-dato = 42;        // ✅ sin error
-dato = true;      // ✅ sin error
-dato = [1, 2, 3]; // ✅ sin error
+// En JS esto no da error, en TS sí (modo estricto)
+// let nombre: string = null;    // ❌ Error
 
-// Parece útil pero es trampa: pierdes el autocompletado
-// y los errores vuelven a aparecer en tiempo de ejecución
-// console.log(dato.metodoQueNoExiste()); // TypeScript no avisa, pero falla al ejecutar
+// Para permitir null hay que declararlo explícitamente
+let nombre: string | null = null;   // ✅ puede ser string o null
+
+nombre = "Ana";
+console.log(nombre);  // "Ana"
+nombre = null;
+console.log(nombre);  // null
+
+// undefined — variable declarada pero sin valor
+let ciudad: string | undefined;
+console.log(ciudad);  // undefined
+
+ciudad = "Madrid";
+console.log(ciudad);  // "Madrid"
 
 // tipo-unknown.ts
 
@@ -91,21 +95,3 @@ console.log(procesarDato("hola"));   // HOLA
 console.log(procesarDato(3.14159));  // 3.14
 console.log(procesarDato(true));     // Sí
 console.log(procesarDato(null));     // Tipo no reconocido
-
-
-// tipo-void.ts
-
-function saludar(nombre: string): void {
-  console.log(`Hola, ${nombre}!`);
-  // No hay return — esta función solo hace algo, no devuelve nada
-}
-
-saludar("Ana");
-
-// Comparación: esto sí devuelve algo
-function duplicar(n: number): number {
-  return n * 2;
-}
-
-const resultado2 = duplicar(5);
-console.log(resultado2); // 10

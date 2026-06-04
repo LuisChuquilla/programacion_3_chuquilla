@@ -1,6 +1,6 @@
 // Con tipo explícito
-const nombre: string  = "Ana";
-const edad:   number  = 28;
+const nombreN: string  = "Ana";
+const edadE:   number  = 28;
 const activo: boolean = true;
 
 // Sin tipo — TypeScript lo infiere automáticamente del valor
