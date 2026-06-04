@@ -1,3 +1,4 @@
+
 abstract class CalculoGarantia {
   protected componenteFalla: string;
 
@@ -63,13 +64,13 @@ console.log("=== POLIMORFISMO EN ÓRDENES DE SERVICIO TÉCNICO ===\n");
 
 const garantiasDelDia: CalculoGarantia[] = [
   new GarantiaPantalla("Display OLED Quemado", 5),
-  new GarantiaPlacaBase("Microprocesador Cortocircuitado", 4, 6),
+  new GarantiaPlacaBase("Microprocesador Cortocorticuitado", 4, 6),
   new GarantiaBateria("Batería Inflada", 3, 4, 5),
   new GarantiaPantalla("Vidrio Frontal Astillado", 3),
 ];
 
 for (const reclamo of garantiasDelDia) {
-  console.log(`  ${reclamo.describirHeader o reclamo.describir()}`);
+  console.log(`  ${reclamo.describir()}`);
 }
 
 const costoTotalReparaciones = garantiasDelDia.reduce((acc, g) => acc + g.calcularCostoReparacion(), 0);
