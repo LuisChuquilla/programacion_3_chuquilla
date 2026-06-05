@@ -1,5 +1,8 @@
 
 abstract class CalculoGarantia {
+  describir() {
+    throw new Error("Method not implemented.");
+  }
   protected componenteFalla: string;
 
   constructor(componente: string) {
