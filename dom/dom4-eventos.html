@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM</title>
+    <script src="dom04-eventos.js" defer></script>
+    <style>
+        .boton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 id="titulo">Eventos del DOM</h1>
+    <h2 onclick="alert('Hello desde Inline Onclick')">Eventos Inline</h2>
+    <button class="boton" id="btn" onclick="mostrarAlerta()">Eventos con addEventListener</button>
+
+    <button class="boton" id="btn2" onclick="agregarProducto()">Agregar producto</button>
+    <ul id="lista-productos"></ul>
+
+    <button class="boton" id="btn3">Agregar producto desde Listener</button>
+
+
+
+    <h2 id="cambiar">Texto</h2>
+    <button class="btncambiar" id="btncambiar">Cambiar Texto</button>
+
+</body>
+</html>
