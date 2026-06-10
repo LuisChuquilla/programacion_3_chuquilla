@@ -21,17 +21,16 @@
 <body>
     <h1 id="titulo">Eventos del DOM</h1>
     <h2 onclick="alert('Hello desde Inline Onclick')">Eventos Inline</h2>
-    <button class="boton" id="btn" onclick="mostrarAlerta()">Eventos con addEventListener</button>
-
+    <h1>Eventos asociados a una función</h1>
+    <button class="boton" id="btn" onclick="mostrarAlerta()">Eventos con función</button>
     <button class="boton" id="btn2" onclick="agregarProducto()">Agregar producto</button>
     <ul id="lista-productos"></ul>
-
+    <h1>Eventos configurados con Listener</h1>
     <button class="boton" id="btn3">Agregar producto desde Listener</button>
 
+    <input id="campo" type="text" placeholder="Escribe algo...">
 
-
-    <h2 id="cambiar">Texto</h2>
-    <button class="btncambiar" id="btncambiar">Cambiar Texto</button>
-
+    <input id="campo_actualizar_parrafo" type="text" placeholder="Escribe para actualizar el párrafo...">
+    <p id="cambiar">Texto original del párrafo</p>
 </body>
 </html>
