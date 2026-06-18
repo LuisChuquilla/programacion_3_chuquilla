@@ -3,7 +3,7 @@
 import WelcomeBanner       from './components/WelcomeBanner'
 import UserGreeting        from './components/UserGreeting'
 import CurrentDateDisplay  from './components/CurrentDateDisplay'
-/*import ColoredBox          from './components/ColoredBox'
+import ColoredBox          from './components/ColoredBox'
 import ConditionalGreeting from './components/ConditionalGreeting'
 import FruitList           from './components/FruitList'
 import PriceTag            from './components/PriceTag'
@@ -13,7 +13,7 @@ import SimpleInfoTable     from './components/SimpleInfoTable'
 import ProductCard         from './components/ProductCard'
 import ProductCatalogList  from './components/ProductCatalogList'
 import UserProfileCard     from './components/UserProfileCard'
-*/
+
 
 // ┌──────────────────────────────────────────────────────────────────────────┐
 // │  Cambia PASO y guarda (Ctrl+S) para navegar entre componentes.          │
@@ -51,7 +51,7 @@ export default function App() {
     PASO ===  1 ? <WelcomeBanner subtitle='Programadores Estrellas' /> :
     PASO ===  2 ? <><UserGreeting name="Ana García" occupation="Desarrolladora Frontend" /></> :
     PASO ===  3 ? <CurrentDateDisplay /> :
-    /*
+    
     PASO ===  4 ? (
       <div style={{ display: 'flex', gap: 12 }}>
         <ColoredBox color="#0070f3" label="Primary" />
@@ -105,7 +105,7 @@ export default function App() {
         skills={['TypeScript', 'React', 'Node.js']}
         bio="Desarrolladora fullstack con 5 años de experiencia."
       />
-    ) */
+    )
    
     <p style={{ color: '#e00' }}>Paso {PASO}: crea el componente primero</p>
 
