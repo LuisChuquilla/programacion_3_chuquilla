@@ -23,7 +23,8 @@ export class AppService {
       "status": "Online",
       "service": "blog service api",
       "version": "0.0.1",
-      "date":  new Date()
+      "date":  new Date(),
+      "testing": "Test CI/CD"
     };
   }
 
