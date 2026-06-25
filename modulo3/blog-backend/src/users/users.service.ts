@@ -6,7 +6,7 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import * as bcrypt from 'bcrypt';
 import { IPaginationOptions, paginate, Pagination } from 'nestjs-typeorm-paginate';
-import { QueryDto } from 'src/common/dtos/query.dto';
+import { QueryDto } from '../common/dtos/query.dto';
 
 @Injectable()
 export class UsersService {

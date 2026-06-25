@@ -1,0 +1,48 @@
+# Compiled output
+/dist
+/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.cproject
+.settings
+/.vscode
+*.sublime-project
+*.sublime-workspace
+
+# NestJS / TypeScript
+.tscbreak
+.eslintcache
+
+# Environment variables (Crucial for security)
+.env
+.env.development
+.env.production
+.env.local
+.env.*.local
+
+# Optional: Docker
+.dockerignore
+
+# Optional: package manager locks (uncomment if you want to ignore them)
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
