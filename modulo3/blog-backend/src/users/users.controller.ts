@@ -2,9 +2,9 @@ import { Controller, Get, Post, Put, Delete, Body, Param, UseGuards, Query, NotF
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
-import { QueryDto } from 'src/common/dtos/query.dto';
-import { SuccessResponseDto } from 'src/common/dtos/response.dto';
+import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
+import { QueryDto } from '../common/dtos/query.dto';
+import { SuccessResponseDto } from '../common/dtos/response.dto';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 
